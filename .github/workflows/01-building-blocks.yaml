@@ -4,15 +4,8 @@ on: push
 
 jobs: 
   echo-hello:
-    run-on: ubuntu-latest
+  run-on: ubuntu-latest
     step: 
-      - name: Say hello
-        run: echo "Hello , World!"
-  echo-goodbye:
-    run-on: ubuntu-latest
-      - name: Successfly step
-         run: |
-           echo " I will failed "
-           exit 0
-      - name: Say goodbye
-        run: echo "Good bye!"
+     - name: Say hello
+       run: echo "Hello , World!"
+ 
